@@ -1,5 +1,5 @@
 # E-Shop 📈💻📊
-
+Este proyecto es un E-Shop diseñado y desarrollado utilizando tecnologías modernas como Tailwind CSS, Next.js y TypeScript. La combinación de estas tecnologías proporciona una base sólida para la creación de una tienda en línea eficiente y fácil de mantener.
 
 
 ### Requisitos previos
