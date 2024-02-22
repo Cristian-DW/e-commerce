@@ -1,5 +1,5 @@
+import Container from "../Container";
 import Link from "next/link";
-import Container from "../container";
 import FooterList from "./FooterList";
 import {MdFacebook} from "react-icons/md"
 import {BsInstagram} from "react-icons/bs"
@@ -52,5 +52,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

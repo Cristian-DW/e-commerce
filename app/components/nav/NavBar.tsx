@@ -11,7 +11,7 @@ const NavBar = () => {
       sticky
       top-0
       w-full
-      bg-slate-200
+      bg-slate-100
       z-30
       shadow-sm
       "
@@ -36,7 +36,7 @@ const NavBar = () => {
             <div className="hiden md:block"> Search</div>
             <div
               className="
-                  flex items-center gap-8md:gap-12
+                  flex items-center gap-8 md:gap-12
                   "
                >
               <div>CartCount</div>
