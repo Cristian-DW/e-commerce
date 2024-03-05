@@ -1,8 +1,8 @@
 export const trucateText = (str: string) => {
-   if (str.length < 25) {
+   if (str.length < 22) {
       return str;
    }
-      return str.substring(0.25) + "...";
+      return str.substring(0.22) + "...";
    }
    
    
