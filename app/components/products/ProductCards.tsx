@@ -1,12 +1,17 @@
 "use client";
 import { trucateText } from "@/utils/trucateText";
 import Image from "next/image";
+import { formatPrice } from "@/utils/formatPrice";
+import { Rating } from "@mui/material";
 
 interface ProductCardsProps {
    data: any;
 }
 
 const ProductCards: React.FC<ProductCardsProps> = ({ data }) => {
+
+  const productRating= data.reviews.reduce((acc:number, item:any) => acc + item.rating, 0) / data.reviews.length
+
   return (
     <div className="col-span-1 cursor-pointer border-[1.2px] border-slate-200 bg-slate-50 rounded-sm p-2 transition hover:bg-slate-100 text-center text-sm">
       <div className="flex flex-col gap-2 items-center w-full ">
@@ -22,10 +27,12 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data }) => {
          {trucateText(data.name)}
         </div>
         <div>
-         
+          <Rating value={productRating} readOnly/>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+        {data.reviews.length} reviews       
+        </div>
+        <div className="font-semibold"> {formatPrice(data.price)}</div>
       </div>
     </div>
   );
