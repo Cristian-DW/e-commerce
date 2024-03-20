@@ -1,3 +1,5 @@
+import Container from "@/app/components/Container";
+import ProductDetails from "./ProductDetails";
 
 interface IPrams {
    ProductId?: string;
@@ -6,8 +8,14 @@ interface IPrams {
 
 const Product = ({params} : {params: IPrams}) => {
 
+
+
    return (
-      <div>Product</div>
+      <div className="p-8">
+         <Container>
+            <ProductDetails product={params.ProductId}/>
+         </Container>
+         Product</div>
    )
 };
 export default Product;
