@@ -5,9 +5,40 @@ interface ProductDetailsProps {
   product: any;
 }
 
+export type CartProductType = {
+  _id: string,
+  name: string,
+  description: string,
+  category: string,
+  brand: string,
+  selectedImg: selectedImgType;
+  quantity: number,
+  price: number
+}
+
+export type selectedImgType = {
+  color: string,
+   colorCode: string,
+  image: string 
+}
+
 const HorizontalLine = () => <hr className="w-[30%] my-2" />;
 
 const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
+
+  const[cartProduct, setCartProduct] = useState<CartProductType>({
+    _id: product.id,
+    name: product.name,
+    description: product.description,
+    category: product.category,
+    brand: product.brand,
+    selectedImg: {
+      ...product.images[0]
+    },
+    quatity: 1,
+    price: product.price
+  } );
+
   const productRating =
     product.reviews.reduce((acc: number, item: any) => acc + item.rating, 0) /
     product.reviews.length;
