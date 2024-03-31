@@ -8,20 +8,20 @@ interface ProductDetailsProps {
 }
 
 export type CartProductType = {
-  _id: string,
-  name: string,
-  description: string,
-  category: string,
-  brand: string,
+  id: string;
+  name: string;
+  description: string;
+  category: string;
+  brand: string;
   selectedImg: SelectedImgType;
-  quantity: number,
-  price: number
+  quantity: number;
+  price: number;
 }
 
 export type SelectedImgType = {
-  color: string,
-   colorCode: string,
-  image: string 
+   color: string;
+  colorCode: string;
+  image: string;
 }
 
 const HorizontalLine = () => <hr className="w-[30%] my-2" />;
@@ -29,7 +29,7 @@ const HorizontalLine = () => <hr className="w-[30%] my-2" />;
 const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
   const[cartProduct, setCartProduct] = useState<CartProductType>({
-    _id: product.id,
+    id: product.id,
     name: product.name,
     description: product.description,
     category: product.category,
@@ -64,7 +64,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         <div className='{product.inStock ? "text-teal-500" : "text-rose-500"}'>{product.inStock ? "In Stock" : "Out of Stock"}</div>
         <HorizontalLine/>
         <SetColor 
-        carttProduct={cartProduct}
+        cartProduct={cartProduct}
         images={product.images}
         handColorSelected={handleColorSelected}
         />
