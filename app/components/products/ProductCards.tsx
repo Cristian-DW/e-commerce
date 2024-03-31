@@ -10,6 +10,7 @@ interface ProductCardsProps {
 }
 
 const ProductCards: React.FC<ProductCardsProps> = ({ data }) => {
+  
   const router = useRouter();
 
   const productRating =

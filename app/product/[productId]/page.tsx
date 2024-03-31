@@ -3,16 +3,17 @@ import ProductDetails from "./ProductDetails";
 import {product} from "@/utils/product";
 
 interface IPrams {
-   ProductId?: string;
+   productId?: string;
 }
 
 
 const Product = ({params} : {params: IPrams}) => {
    console.log("params", params)
+   product
    return (
       <div className="p-8">
          <Container>
-            <ProductDetails product={params.ProductId}/>
+            <ProductDetails product={params.productId}/>
          </Container>
          Product</div>
    )
