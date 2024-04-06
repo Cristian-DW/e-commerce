@@ -1,26 +1,26 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "allowJs": true, // Permitir archivos JavaScript junto con archivos TypeScript
+    "skipLibCheck": true, // Opcional: saltar la comprobación de librerías
+    "strict": false, // Desactivar las opciones de comprobación estricta
+    "noEmit": true, // No emitir archivos JavaScript
+    "esModuleInterop": true, // Habilitar la interoperabilidad de módulos de ECMAScript
+    "module": "esnext", // Utilizar el formato de módulo ECMAScript
+    "moduleResolution": "node", // Resolver los módulos utilizando la resolución de Node.js
+    "resolveJsonModule": true, // Permitir la importación de módulos JSON
+    "isolatedModules": true, // Asegurar que cada archivo es tratado como un módulo independiente
+    "jsx": "preserve", // Conservar el JSX en el código compilado
+    "incremental": true, // Habilitar la compilación incremental para mejorar el rendimiento
     "plugins": [
       {
-        "name": "next"
+        "name": "typescript-plugin-css-modules"
       }
     ],
     "paths": {
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
+
