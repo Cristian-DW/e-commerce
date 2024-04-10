@@ -4,6 +4,7 @@ import Image from 'next/image';
 import SetColor from '@/app/components/products/SetColor';
 import {Rating} from '@mui/material';
 import { useCallback, useState } from 'react';
+import SetQuantity from '@/app/components/products/setQuantity';
 interface ProductDetailsProps {
   product: any;
 }
@@ -54,6 +55,31 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
     [cartProduct.selectedImg]
     );
 
+    const handleQtyIncrease = useCallback(() => {
+
+      if(cartProduct.quantity === 99) {
+        return;
+      }
+
+      setCartProduct((prev) => {
+        return {...prev, quantity: prev.quantity + 1};
+      });
+
+    }, [cartProduct])
+
+    
+    const handleQtyDecrease = useCallback(() => {
+      if(cartProduct.quantity === 1) {
+        return;
+      }
+
+      setCartProduct((prev) => {
+        return {...prev, quantity: prev.quantity - 1};
+
+      });
+    }, [cartProduct])
+
+
   return (
     <div className="grid grid-cols-1  md:grid-cols-2 gap-12">
       <div>Images</div>
@@ -76,7 +102,11 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         handColorSelect={handleColorSelect}
         />
         <HorizontalLine/>
-        <div>quatity</div>
+        <SetQuantity 
+        cartProduct={cartProduct}
+        handleQtyDecrease={handleQtyDecrease}
+        handleQtyIncrease={handleQtyIncrease}
+        />
         <HorizontalLine/>
         <div>add to cart</div>
 
