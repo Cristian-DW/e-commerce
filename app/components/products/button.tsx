@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { IconType } from "react-icons"
 
@@ -38,3 +38,5 @@ const Button: React.FC<ButtonProps> = ({
       </button>
    )
 }
+
+export default Button;

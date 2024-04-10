@@ -5,6 +5,9 @@ import SetColor from '@/app/components/products/SetColor';
 import {Rating} from '@mui/material';
 import { useCallback, useState } from 'react';
 import SetQuantity from '@/app/components/products/setQuantity';
+import Button from '@/app/components/products/button';
+
+
 interface ProductDetailsProps {
   product: any;
 }
@@ -108,7 +111,12 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         handleQtyIncrease={handleQtyIncrease}
         />
         <HorizontalLine/>
-        <div>add to cart</div>
+        <div className='max-w[300px]'>
+          <Button 
+          label="ADD TO CART"
+          onClick={() => console.log("Add to cart")}
+          />
+        </div>
 
       </div>
     </div>
