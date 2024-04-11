@@ -5,7 +5,7 @@ import SetColor from '@/app/components/products/SetColor';
 import {Rating} from '@mui/material';
 import { useCallback, useState } from 'react';
 import SetQuantity from '@/app/components/products/setQuantity';
-import Button from '@/app/components/products/button';
+import Button from '@/app/components/button';
 import ProductImage from '@/app/components/products/ProductImage';
 
 
