@@ -1,6 +1,7 @@
 import Container from "@/app/components/Container";
 import ProductDetails from "./ProductDetails";
 import {product} from "@/utils/product";
+import ListRating from "@/app/components/products/listRating";
 
 interface IPrams {
    productId?: string;
@@ -14,6 +15,10 @@ const Product = ({params} : {params: IPrams}) => {
       <div className="p-8">
          <Container>
             <ProductDetails product={product}/>
+            <div className="flex flex-col mt-3">
+               <div>Add Rating</div>
+               <ListRating product={product}/>
+            </div>
          </Container>
          </div>
    )
