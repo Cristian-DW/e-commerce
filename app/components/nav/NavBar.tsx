@@ -22,7 +22,7 @@ const NavBar = () => {
          border-b-[1px]"
       >
         <Container>
-          '
+          
           <div
             className="
                flex
@@ -32,13 +32,18 @@ const NavBar = () => {
                md:gap-0
                "
           >
-            <Link href="/" className={`${redressed.className} text-3xl font-bold`}>E-Shop</Link>
+            <Link
+              href="/"
+              className={`${redressed.className} text-3xl font-bold`}
+            >
+              E-Shop
+            </Link>
             <div className="hiden md:block"> Search</div>
             <div
               className="
                   flex items-center gap-8 md:gap-12
                   "
-               >
+            >
               <div>CartCount</div>
               <div>UserMenu</div>
             </div>

@@ -6,6 +6,7 @@ import {Rating} from '@mui/material';
 import { useCallback, useState } from 'react';
 import SetQuantity from '@/app/components/products/setQuantity';
 import Button from '@/app/components/products/button';
+import ProductImage from '@/app/components/products/ProductImage';
 
 
 interface ProductDetailsProps {
@@ -46,9 +47,9 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
     console.log(cartProduct);
 
-  const productRating =
-    product.reviews.reduce((acc: number, item: any) => acc + item.rating, 0) /
-    product.reviews.length;
+    const productRating =
+  product.reviews.reduce((acc: number, item: any) => acc + item.rating, 0) /
+  product.reviews.length;
 
     const handleColorSelect = useCallback((value: SelectedImgType) => {
       setCartProduct((prev) => {
@@ -85,7 +86,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
   return (
     <div className="grid grid-cols-1  md:grid-cols-2 gap-12">
-      <div>Images</div>
+      <ProductImage cartProduct={cartProduct} product={product} handleColorSelect={handleColorSelect}/>
       <div className="flex flex-col gap-1 text-slate-500 text-sm">
         <h2 className="text-3xl font-bold mb-4 text-slate-700"> {product.name}</h2>
         <div className="flex items-center gap-2">

@@ -8,14 +8,14 @@ interface IPrams {
 
 
 const Product = ({params} : {params: IPrams}) => {
-   console.log("params", params)
-   product
+   console.log("params", params);
+   
    return (
       <div className="p-8">
          <Container>
-            <ProductDetails product={params.productId}/>
+            <ProductDetails product={product}/>
          </Container>
-         Product</div>
+         </div>
    )
 };
 export default Product;
