@@ -3,6 +3,7 @@
 import Heading from "../Heading";
 import moment from "moment";
 import { Rating } from "@mui/material";
+import Avatar from "../Avatar";
 
 interface ListRatingProps {
    product: any;
@@ -21,7 +22,7 @@ const ListRating: React.FC<ListRatingProps> = ({product}) => {
                <div key={review.id}
                className="max-w-300px">
                   <div className="flex gap-2 items-center">
-                     <div>Avatar</div>
+                     <Avatar src={review?.user.image}/>
                      <div className="font-semibold">{review?.user.name}</div>
                      <div className="font-light text-pretty" >{moment(review.createdDate).fromNow()}</div>
                   </div>
