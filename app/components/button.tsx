@@ -26,8 +26,8 @@ const Button: React.FC<ButtonProps> = ({
    return (
       <button
       disabled={disabled} 
-      className={`relative w-full bg-slate-800 text-white px-4 py-3 rounded-md text-sm font-medium hover:bg-slate-900 disabled:opacity-50 disabled:cursor-not-allowed
-      ${outlined ? 'border border-slate-300' : 'bg-slate-800'}
+      className={`relative w-full bg-indigo-500 text-white px-4 py-3 rounded-md text-sm font-medium hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed
+      ${outlined ? 'border border-indigo-300' : 'indigo-700'}
       ${outlined ? 'text-slate-300' : 'text-white'}
       ${small ? 'text-sm font-light' : 'text-md font-semibold'}
       ${small ? 'py-1 px-2 border-[1px]' : 'py-3 px-4 border-[2px]'}
