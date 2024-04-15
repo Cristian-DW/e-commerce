@@ -19,12 +19,13 @@ const Button: React.FC<ButtonProps> = ({
    small,
    custom,
    icon: Icon,
-   onClick
+   onClick,
 
 }) => {
 
    return (
       <button
+      onClick={onClick}
       disabled={disabled} 
       className={`relative w-full bg-indigo-500 text-white px-4 py-3 rounded-md text-sm font-medium hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed
       ${outlined ? 'border border-indigo-300' : 'indigo-700'}

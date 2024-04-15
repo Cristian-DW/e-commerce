@@ -1,8 +1,11 @@
-import {createContext, useState, useContext } from 'react';
+import { CartProductType } from '@/app/product/[productId]/ProductDetails';
+import {createContext, useState, useContext, useCallback } from 'react';
 
 
 type CartContextType = {
-   cartTotalQty: number
+   cartTotalQty: number;
+   cartProducts: CartProductType[] | null;
+   handleAddProductToCart: (product: CartProductType) => void;
 }
 
 export const CartContext = 
@@ -14,9 +17,26 @@ interface Props {
 
 export const CartContextProvider = (props: Props) => {
    const [cartTotalQty, setCartTotalQty] = useState(10);
-   
+   const [cartProducts, setCartProducts] = useState<CartProductType[] | null>(null);
+
+   const handleAddProductToCart = useCallback((product: CartProductType) => {
+      setCartProducts((prev) => {
+         let updateCart;
+         if (prev) {
+            updateCart = [...prev, product]
+         } else {
+            updateCart = [product]
+         }
+         return updateCart
+      })
+   }, [])
+
    const value = {
       cartTotalQty,
+      cartProducts,
+
+      
+      handleAddProductToCart
    }
    
    return <CartContext.Provider value={value} {...props}/>
