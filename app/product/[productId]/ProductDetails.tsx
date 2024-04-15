@@ -1,12 +1,12 @@
 'use client';
 
-import Image from 'next/image';
 import SetColor from '@/app/components/products/SetColor';
 import {Rating} from '@mui/material';
 import { useCallback, useState } from 'react';
 import SetQuantity from '@/app/components/products/setQuantity';
 import Button from '@/app/components/button';
 import ProductImage from '@/app/components/products/ProductImage';
+import { useCart } from '@/hooks/UseCart';
 
 
 interface ProductDetailsProps {
@@ -34,6 +34,8 @@ const HorizontalLine = () => <hr className="w-[30%] my-2" />;
 
 const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
+  const {cartTotalQty} = useCart()
+
   const[cartProduct, setCartProduct] = useState<CartProductType>({
     id: product.id,
     name: product.name,
@@ -44,9 +46,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
     quantity: 1,
     price: product.price
   });
-
-    console.log(cartProduct);
-
+  
     const productRating =
   product.reviews.reduce((acc: number, item: any) => acc + item.rating, 0) /
   product.reviews.length;
