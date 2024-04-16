@@ -1,5 +1,6 @@
 import { CartProductType } from '@/app/product/[productId]/ProductDetails';
 import {createContext, useState, useContext, useCallback, useEffect } from 'react';
+import {toast} from 'react-hot-toast'
 
 
 
@@ -22,9 +23,9 @@ export const CartContextProvider = (props: Props) => {
 
    useEffect(() => {
       const cartItems : any = localStorage.getItem('eShopCartItems')
-      cartProducts : CartProductType[] | null = JSON.parse(cartItems)
+      const cartProducts : CartProductType[] | null = JSON.parse(cartItems)
 
-      setCartProducts(cProducts)
+      setCartProducts(cartProducts)
    },[])
 
    const handleAddProductToCart = useCallback((product: CartProductType) => {
@@ -36,6 +37,7 @@ export const CartContextProvider = (props: Props) => {
             updatedCart = [product]
          }
 
+         toast.success('Product added to cart');
          localStorage.setItem('eShopCartItems', JSON.stringify(updatedCart))
          return updatedCart
       })
