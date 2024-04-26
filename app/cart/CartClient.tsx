@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MdArrowBack } from "react-icons/md";
 import Heading from "../components/Heading";
 import Button from "../components/button";
+import ItemContent from "./ItemContent";
 
 const CartClient = () => {
   const { cartProducts } = useCart();
@@ -29,7 +30,7 @@ const CartClient = () => {
   return (
     <div>
       <Heading title="Shopping cart" center />
-      <div className="grid grid-cols-4 gap-5 text-xs gap-4 pb-2 items-center mt-8">
+      <div className="grid grid-cols-5 text-xs gap-4 pb-2 items-center  mt-8 px-10">
         <div className="col-span-2 justify-self-start">PRODUCT</div>
         <div className="justify-self-center">PRICE</div>
         <div className="justify-self-center">QUANTITY</div>
@@ -38,16 +39,16 @@ const CartClient = () => {
       <div>
         {cartProducts &&
           cartProducts.map((item) => {
-            return <div key={item.id}> {item.name} </div>;
+            return <ItemContent key={item.id} item={item}/>;
           })}
       </div>
       <div className="border-t-[1.5px] border-slate-200 pt-4 flex justify-between gap-3">
-        <div className=" w-[90px]">
+        <div className=" w-[120px]">
           <Button label="Clear Cart" onClick={() => {}} small outlined />
         </div>
         <div className="text-sm flex flex-col gap-1 items-start ">
-          <div className="flex justify-between items-center text-base font-semibold">
-            <span>Subtotal</span>
+          <div className="w-full flex justify-between items-center text-base font-semibold">
+            <span>Subtotal:</span>
             <span>$1000</span>
           </div>
           <p className="text-slate-500">Taxes and shipping calculated at checkout</p>
