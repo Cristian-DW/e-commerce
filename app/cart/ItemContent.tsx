@@ -5,6 +5,7 @@ import { formatPrice } from "@/utils/formatPrice";
 import Link from "next/link";
 import { trucateText } from "@/utils/trucateText";
 import Image from "next/image";
+import SetQuantity from "../components/products/setQuantity";
 
 interface ItemContentProps {
    item : CartProductType
@@ -32,10 +33,20 @@ const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
 
       </div>
       <div className="text-center text-base font-semibold md:text-lg">{formatPrice(item.price)}</div>
-      <div></div>
-      <div></div>
+      <div className="justify-self-center">
+         <SetQuantity
+         cartCounter={true}
+         cartProduct={item}
+         handleQtyIncrease={() => {}}
+         handleQtyDecrease={() => {}}
+         />
+      </div>
+      <div className="justify-self-end font-semibold">
+         {formatPrice(item.price * item.quantity)}
+      </div>
     </div>
   );
 };
 
 export default ItemContent
+
