@@ -6,12 +6,14 @@ import Link from "next/link";
 import { trucateText } from "@/utils/trucateText";
 import Image from "next/image";
 import SetQuantity from "../components/products/setQuantity";
+import { useCart } from "@/hooks/UseCart";
 
 interface ItemContentProps {
    item : CartProductType
 }
 
 const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
+   const {handleRemoveProductFromCart} = useCart()
   return (
     <div className="grid grid-cols-5 text-xs md:text-sm gap-4 border-[1.5px] border-slate-200 py-4 items-center">
       <div className="col-span-2 flex items-center gap-2 md:gap-4">
@@ -26,7 +28,7 @@ const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
             </Link>
             <div>{item.selectedImg.color}</div>
             <div className="w-[70px]"></div>
-            <button className="text-blue-800  text-[11px] text-left mt-[1px]  hover:underline hover:text-red-600 " onClick={() => {}}>
+            <button className="text-blue-800   text-[11px] text-left mt-[1px]  hover:underline hover:text-red-600 " onClick={() => handleRemoveProductFromCart(item)}>
                Delete
             </button>
          </div>
@@ -41,7 +43,7 @@ const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
          handleQtyDecrease={() => {}}
          />
       </div>
-      <div className="justify-self-end font-semibold">
+      <div className="justify-self-end font-semibold px-4">
          {formatPrice(item.price * item.quantity)}
       </div>
     </div>
