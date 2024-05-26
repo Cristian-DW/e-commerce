@@ -34,6 +34,21 @@ export type SelectedImgType = {
 
 const HorizontalLine = () => <hr className="w-[30%] my-2" />;
 
+/**
+ * ProductDetails Component
+ *
+ * This component displays the detailed view of a product, including its images, description,
+ * rating, and options to select color and quantity. It also provides functionality to add the 
+ * product to the shopping cart.
+ *
+ * @component
+ * @example
+ * const product = { id: '1', name: 'Product Name', description: 'Product Description', category: 'Category', brand: 'Brand', images: [], price: 100, reviews: [] };
+ * return (
+ *   <ProductDetails product={product} />
+ * )
+ */
+
 const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
   const { handleAddProductToCart, cartProducts } = useCart();
   const [isProductInCart, setIsProductInCart] = useState(false);
