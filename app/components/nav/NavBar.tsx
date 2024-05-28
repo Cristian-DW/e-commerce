@@ -1,10 +1,25 @@
-import Container  from "../Container";
+import React from 'react';
+import Container from "../Container";
 import Link from "next/link";
 import { Redressed } from "next/font/google";
 
 const redressed = Redressed({ subsets: ["latin"], weight: ["400"] });
 
-const NavBar = () => {
+/**
+ * NavBar Component
+ *
+ * This component serves as the navigation bar for the application.
+ * It includes the site logo, search bar, cart count, and user menu.
+ *
+ * @component
+ * @example
+ * return (
+ *   <NavBar />
+ * )
+ *
+ * @returns {JSX.Element} The rendered NavBar component
+ */
+const NavBar: React.FC = () => {
   return (
     <div
       className="
@@ -22,7 +37,6 @@ const NavBar = () => {
          border-b-[1px]"
       >
         <Container>
-          
           <div
             className="
                flex
@@ -38,7 +52,7 @@ const NavBar = () => {
             >
               E-Shop
             </Link>
-            <div className="hiden md:block"> Search</div>
+            <div className="hidden md:block">Search</div>
             <div
               className="
                   flex items-center gap-8 md:gap-12
