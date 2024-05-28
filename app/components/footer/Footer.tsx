@@ -16,6 +16,8 @@ import { AiFillTwitterCircle, AiFillYoutube } from "react-icons/ai";
  * @example
  * return <Footer />
  */
+
+
 const Footer = () => {
   return (
     <footer className="bg-slate-700 py-4 text-slate-200 text-sm mt-16">
@@ -67,4 +69,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer
