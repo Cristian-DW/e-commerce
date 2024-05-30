@@ -15,8 +15,8 @@ const ProductImage: React.FC<ProductImageProps> = ({
    handleColorSelect,
 }) => {
   return (
-    <div className="grid grid-cols-6 gap-2 h-full max-h-[500px] min-h-[300px] sm:min-h-[400px] ">
-      <div className="flex flex-col items-center justify-center  cursor-pointer p-10 h-full max-h-[500px] min-h-[300px]  sm:min-h-[400px]">
+    <div className="grid grid-cols-10 gap-2 h-full max-h-[500px] min-h-[300px] sm:min-h-[400px] ">
+      <div className="flex flex-col col-span-2 items-center justify-center  cursor-pointer p-10 h-full max-h-[500px] min-h-[300px]  sm:min-h-[400px]">
         {product.images.map((image: SelectedImgType) => {
          return (
 
@@ -32,7 +32,7 @@ const ProductImage: React.FC<ProductImageProps> = ({
 
         })}
       </div>
-      <div className="col-span-5 relative aspect-square">
+      <div className="col-start-4 col-span-5 relative aspect-square">
         <Image 
         fill 
         src={cartProduct.selectedImg.image}

@@ -4,7 +4,7 @@ export const products = [
    {
      id: "64a654593e91b8e73a351e9b",
      name: "iphone 14",
-     description: "Short description",
+     description: "Discover the new iPhone 14, designed to elevate your mobile experience. Featuring a 6.1-inch Super Retina XDR display, the powerful A16 Bionic chip, and an advanced 12MP dual-camera system, every detail comes to life. Enjoy 5G connectivity, enhanced durability with Ceramic Shield, and water and dust resistance (IP68). All powered by the intuitive iOS 16.",
      price: 2999,
      brand: "apple",
      category: "Phone",
@@ -23,25 +23,89 @@ export const products = [
            "https://m.media-amazon.com/images/I/417tEj3iJ8L._AC_.jpg",
        },
      ],
-     reviews: [],
+     reviews: [
+      {
+        id: "6499b4887402b0efd394d8f3",
+        userId: "6499b184b0e9a8c8709821d3",
+        productId: "648437b38c44d52b9542e340",
+        rating: 4,
+        comment:
+          "good enough. I like the camera and casing. the delivery was fast too.",
+        createdDate: "2023-06-26T15:53:44.483Z",
+        user: {
+          id: "6499b184b0e9a8c8709821d3",
+          name: "Chaoo",
+          email: "example1@gmail.com",
+          emailVerified: null,
+          image:
+            "https://lh3.googleusercontent.com/a/AAcHTtcuRLwWi1vPKaQOcJlUurlhRAIIq2LgYccE8p32=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-06-26T15:40:52.558Z",
+          updatedAt: "2023-06-26T15:40:52.558Z",
+          role: "USER",
+        },
+      },
+      {
+        id: "6499a110efe4e4de451c7edc",
+        userId: "6475af156bad4917456e6e1e",
+        productId: "648437b38c44d52b9542e340",
+        rating: 5,
+        comment: "I really liked it!!",
+        createdDate: "2023-06-26T14:30:40.998Z",
+        user: {
+          id: "6475af156bad4917456e6e1e",
+          name: "Charles",
+          email: "example@gmail.com",
+          emailVerified: null,
+          image:
+            "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+          hashedPassword: null,
+          createdAt: "2023-05-30T08:08:53.979Z",
+          updatedAt: "2023-05-30T08:08:53.979Z",
+          role: "ADMIN",
+        },
+      },
+     ],
    },
    {
-     id: "64a4ebe300900d44bb50628a",
-     name: "Logitech MX Keys Advanced Wireless Illuminated Keyboard, Tactile Responsive Typing, Backlighting, Bluetooth, USB-C, Apple macOS, Microsoft Windows, Linux, iOS, Android, Metal Build (Black)",
-     description:
-       "PERFECT STROKE KEYS - Spherically-dished keys match the shape of your fingertips, offering satisfying feedback with every tap\nCOMFORT AND STABILITY - Type with confidence on a keyboard crafted for comfort, stability, and precision",
-     price: 102.99,
-     brand: "logitech",
-     category: "Accesories",
-     inStock: true,
-     images: [
-       {
-         color: "Black",
-         colorCode: "#000000",
-         image:
-           "https://m.media-amazon.com/images/I/71gOLg2-kqL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-       },
-     ],
+    id: "648437b38c44d52b9542e340",
+    name: "Microsoft Xbox Series S 1TB SSD Console Carbon Black - Includes Xbox Wireless Controller - Up to 120 frames per second - 10GB RAM 1TB SSD - Experience high dynamic range - Xbox Velocity Architecture",
+    description:
+      'The Microsoft Xbox Series S 1TB SSD Console in Carbon Black is a powerhouse of gaming technology. With its sleek design and included Xbox Wireless Controller, it offers a seamless gaming experience. Featuring up to 120 frames per second, 10GB RAM, and a 1TB SSD, it ensures lightning-fast load times and smooth gameplay. Experience stunning visuals with high dynamic range (HDR), and enjoy enhanced performance thanks to Xbox Velocity Architecture. Whether you are a casual gamer or a competitive player, the Xbox Series S delivers immersive gaming like never before.',
+    price: 315,
+    brand: "Microsoft",
+    category: "Consoles",
+    inStock: true,
+    images: [
+      {
+        color: "Black",
+        colorCode: "#000000",
+        image:
+          "https://m.media-amazon.com/images/I/61hwaBMvOxL._SX522_.jpg",
+      },
+     
+    ],
+    reviews: [],
+  },
+   {
+    id: "64a4ebe300900d44bb50628b",
+    name: "Dell XPS 13 9315 - Laptop empresarial delgada y ligera (13.4 pulgadas FHD+, Intel 10-Core i7-1250U, 32 GB LPDDR5 RAM, 1 TB SSD)",
+
+    description: "Experience the ultimate productivity with the Dell XPS 13. Featuring a 13.4 inch FHD+ touch display, the latest Intel Core i7-1165G7 processor, 16GB RAM, and 512GB SSD, this laptop is designed for high performance. The Intel Iris Xe graphics deliver stunning visuals, while the sleek, lightweight design ensures portability and style. Perfect for professionals and students alike, the Dell XPS 13 comes with Windows 11 Home pre-installed.",
+    price: 1299.99,
+    brand: "Dell",
+    category: "Laptops",
+    inStock: true,
+    images: [
+      {
+        color: "Silver",
+        colorCode: "#C0C0C0",
+        image: "https://m.media-amazon.com/images/I/81sihyH9nqL._AC_SX679_.jpg",
+        image2: "https://m.media-amazon.com/images/I/81sihyH9nqL._AC_SX679_.jpg",
+        
+      },
+      
+    ],
      reviews: [
        {
          id: "64a65a6158b470c6e06959ee",
@@ -66,83 +130,10 @@ export const products = [
      ],
    },
    {
-     id: "648437b38c44d52b9542e340",
-     name: "Apple iPhone 13, 64GB",
-     description:
-       'The product is refurbished, fully functional, and in excellent condition. Backed by the 90-day E~Shop Renewed Guarantee.\n- This pre-owned product has been professionally inspected, tested and cleaned by Amazon qualified vendors. It is not certified by Apple.\n- This product is in "Excellent condition". The screen and body show no signs of cosmetic damage visible from 12 inches away.\n- This product will have a battery that exceeds 80% capacity relative to new.\n- Accessories may not be original, but will be compatible and fully functional. Product may come in generic box.\n- Product will come with a SIM removal tool, a charger and a charging cable. Headphone and SIM card are not included.\n- This product is eligible for a replacement or refund within 90-day of receipt if it does not work as expected.\n- Refurbished phones are not guaranteed to be waterproof.',
-     price: 40,
-     brand: "Apple",
-     category: "Phone",
-     inStock: true,
-     images: [
-       {
-         color: "Black",
-         colorCode: "#000000",
-         image:
-           "https://m.media-amazon.com/images/I/61g+McQpg7L._AC_SX679_.jpg",
-       },
-       {
-         color: "Blue",
-         colorCode: " #0000FF",
-         image:
-           "https://m.media-amazon.com/images/I/713Om9vCHUL._AC_SX679_.jpg",
-       },
-       {
-         color: "Red",
-         colorCode: "#FF0000",
-         image:
-           "https://m.media-amazon.com/images/I/61thdjmfHcL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-       },
-     ],
-     reviews: [
-       {
-         id: "6499b4887402b0efd394d8f3",
-         userId: "6499b184b0e9a8c8709821d3",
-         productId: "648437b38c44d52b9542e340",
-         rating: 4,
-         comment:
-           "good enough. I like the camera and casing. the delivery was fast too.",
-         createdDate: "2023-06-26T15:53:44.483Z",
-         user: {
-           id: "6499b184b0e9a8c8709821d3",
-           name: "Chaoo",
-           email: "example1@gmail.com",
-           emailVerified: null,
-           image:
-             "https://lh3.googleusercontent.com/a/AAcHTtcuRLwWi1vPKaQOcJlUurlhRAIIq2LgYccE8p32=s96-c",
-           hashedPassword: null,
-           createdAt: "2023-06-26T15:40:52.558Z",
-           updatedAt: "2023-06-26T15:40:52.558Z",
-           role: "USER",
-         },
-       },
-       {
-         id: "6499a110efe4e4de451c7edc",
-         userId: "6475af156bad4917456e6e1e",
-         productId: "648437b38c44d52b9542e340",
-         rating: 5,
-         comment: "I really liked it!!",
-         createdDate: "2023-06-26T14:30:40.998Z",
-         user: {
-           id: "6475af156bad4917456e6e1e",
-           name: "Charles",
-           email: "example@gmail.com",
-           emailVerified: null,
-           image:
-             "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
-           hashedPassword: null,
-           createdAt: "2023-05-30T08:08:53.979Z",
-           updatedAt: "2023-05-30T08:08:53.979Z",
-           role: "ADMIN",
-         },
-       },
-     ],
-   },
-   {
      id: "64a4e9e77e7299078334019f",
-     name: "Logitech MX Master 2S Wireless Mouse – Use on Any Surface, Hyper-Fast Scrolling, Ergonomic Shape, Rechargeable, Control Upto 3 Apple Mac and Windows Computers, Graphite",
+     name: "Logitech MX Keys S + MX Master 3S - Performance Wireless Illuminated Keyboard and Mouse, Smooth Typing, Fast Scrolling, Bluetooth, USB-C",
      description:
-       "Cross computer control: Game changing capacity to navigate seamlessly on 3 computers, and copy paste text, images, and files from 1 to the other using Logitech flow\nDual connectivity: Use with upto 3 Windows or Mac computers via included Unifying receiver or Bluetooth Smart wireless technology. Gesture button- Yes",
+       "The Logitech MX Keys S + MX Master 3S combo offers a high-performance wireless keyboard and mouse with backlighting. The keyboard provides a smooth and comfortable typing experience, while the mouse features fast and precise scrolling. Both devices support Bluetooth and USB-C connectivity and are compatible with Windows, Linux, Chrome OS, and macOS.",
      price: 70,
      brand: "logitech",
      category: "Accesories",
@@ -152,34 +143,73 @@ export const products = [
          color: "Graphite",
          colorCode: " #383838",
          image:
-           "https://m.media-amazon.com/images/I/61ni3t1ryQL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+           "https://m.media-amazon.com/images/I/61Z75u-IJUL._AC_SX466_.jpg",
        },
+       {
+        color: "pale gray",
+        colorCode: " #fefefe",
+        image:
+          "https://m.media-amazon.com/images/I/717r5mrN0oL._AC_SX466_.jpg",
+      },
+      {
+        color: "pink",
+        colorCode: " #FFC0CB",
+        image:
+          "https://m.media-amazon.com/images/I/71LEUu+OKUL._AC_SX466_.jpg",
+      },
+
+     
      ],
      reviews: [],
    },
    {
      id: "649d775128b6744f0f497040",
-     name: 'Smart Watch(Answer/Make Call), 1.85" Smartwatch for Men Women IP68 Waterproof, 100+ Sport Modes, Fitness Activity Tracker, Heart Rate Sleep Monitor, Pedometer, Smart Watches for Android iOS, 2023',
+     name: 'JBL Tune 520BT Wireless On-Ear Headphones, Up to 57 Hours Battery Life and Speed ​​Charging, Lightweight, Comfortable and Foldable Design',
      description:
-       'Bluetooth Call and Message Reminder: The smart watch is equipped with HD speaker, after connecting to your phone via Bluetooth, you can directly use the smartwatches to answer or make calls, read messages, store contacts, view call history. The smartwatch can set up more message notifications in "GloryFit" APP. You will never miss any calls and messages during meetings, workout and riding.',
+       'The JBL Tune 520BT Wireless On-Ear Headphones offer an exceptional audio experience with up to 57 hours of battery life and speed charging capabilities. These lightweight and comfortable headphones feature a foldable design, making them perfect for on-the-go use. Enjoy high-quality sound and extended listening sessions without the hassle of frequent recharging.',
      price: 50,
-     brand: "Nerunsa",
-     category: "Watch",
+     brand: "JBL",
+     category: "Accesories",
      inStock: true,
      images: [
        {
-         color: "Black",
-         colorCode: "#000000",
+         color: "Purple",
+         colorCode: "#ce93d8",
          image:
-           "https://m.media-amazon.com/images/I/71s4mjiit3L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+           "https://m.media-amazon.com/images/I/61mz7WxnjdL._AC_SX466_.jpg",
        },
        {
-         color: "Silver",
-         colorCode: "#C0C0C0",
+         color: "black",
+         colorCode: "#000000",
          image:
-           "https://m.media-amazon.com/images/I/71zbWSRMaYL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+           "https://m.media-amazon.com/images/I/61hOoghkbRL._AC_SX466_.jpg",
        },
+       {
+        color: "blue",
+        colorCode: "#00527c",
+        image:
+          "https://m.media-amazon.com/images/I/61UBYKeK1nL._AC_SX466_.jpg",
+      },
      ],
      reviews: [],
    },
+   {
+    id: "649d775128b6744f0f497041",
+    name: "BenQ Mobiuz EX3210R - 32 Inch 2K VA 165Hz Curved Gaming Computer Monitor with Free Steam Code, Dying Light 2 Night Runner's Edition, 1000R Curve",
+    description: "The BenQ Mobiuz EX3210R is a cutting-edge 32-inch 2K VA gaming monitor designed to elevate your gaming experience. With a high refresh rate of 165Hz and a 1000R curvature, it delivers immersive visuals and smooth gameplay. Plus, it comes with a free Steam code for Dying Light 2 Night Runner's Edition, allowing you to dive into an exciting gaming adventure right away. Enjoy stunning graphics, fluid motion, and a heightened sense of immersion with this premium gaming monitor from BenQ.",
+    price: 499,
+    brand: "BenQ",
+    category: "Monitor",
+    inStock: true,
+    images: [
+      {
+        color: "Black",
+        colorCode: "#000000",
+        image: 'https://m.media-amazon.com/images/I/71JO5HhHPkL._AC_SX466_.jpg'
+      },
+    ],
+    "reviews": []
+  }
+  
+  
  ];
