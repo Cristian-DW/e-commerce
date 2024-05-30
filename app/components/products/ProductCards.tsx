@@ -1,18 +1,46 @@
 "use client";
-import { trucateText } from "@/utils/trucateText";
+
+import { truncateText } from "@/utils/truncateText";
 import Image from "next/image";
 import { formatPrice } from "@/utils/formatPrice";
 import { Rating } from "@mui/material";
 import { useRouter } from "next/navigation";
 
 interface ProductCardsProps {
-   data: any;
+  data: any;
 }
 
+/**
+ * ProductCards Component
+ *
+ * This component renders a card for a product, displaying its image, name, rating, review count, and price.
+ * Clicking on the card navigates to the product's detail page.
+ *
+ * @component
+ * @example
+ * const productData = {
+ *   id: '1',
+ *   name: 'Sample Product',
+ *   reviews: [{ rating: 5 }, { rating: 4 }],
+ *   images: [{ image: '/sample-image.jpg' }],
+ *   price: 29.99
+ * };
+ * return (
+ *   <ProductCards data={productData} />
+ * )
+ *
+ * @param {Object} data - The product data.
+ * @param {string} data.id - The product ID.
+ * @param {string} data.name - The product name.
+ * @param {Array} data.reviews - The product reviews.
+ * @param {Array} data.images - The product images.
+ * @param {number} data.price - The product price.
+ * @returns {JSX.Element} The rendered ProductCards component
+ */
 const ProductCards: React.FC<ProductCardsProps> = ({ data }) => {
-  
   const router = useRouter();
 
+  // Calculate the average rating for the product
   const productRating =
     data.reviews.reduce((acc: number, item: any) => acc + item.rating, 0) /
     data.reviews.length;
@@ -29,9 +57,9 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data }) => {
             alt={data.name}
             fill
             className="w-full h-full object-contain"
-            />
+          />
         </div>
-        <div className="mt-4">{trucateText(data.name)}</div>
+        <div className="mt-4">{truncateText(data.name)}</div>
         <div>
           <Rating value={productRating} readOnly />
         </div>
