@@ -1,8 +1,9 @@
 "use client";
 
-import { truncateText } from "@/utils/truncateText";
+
 import Image from "next/image";
 import { formatPrice } from "@/utils/formatPrice";
+import { truncateText } from "../../../utils/trucateText";
 import { Rating } from "@mui/material";
 import { useRouter } from "next/navigation";
 

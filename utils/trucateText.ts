@@ -4,8 +4,8 @@
  *
  * @param str string to truncate
  * @returns truncated string
- */
-export const trucateText = (str: string): string => {
+ **/
+export const truncateText = (str: string): string => {
     /**
      * Maximum length of the string. If the original string is shorter
      * than this, it will not be truncated.
