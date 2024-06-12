@@ -209,7 +209,250 @@ export const products = [
       },
     ],
     "reviews": []
-  }
+  },
+  {
+    "id": "64a4ebe300900d44bb50628c",
+    "name": "Fujifilm Instax Mini 12 Instant Film Camera",
+    "description": "Capture unforgettable moments with the Fujifilm Instax Mini 12 Instant Film Camera. This compact and easy-to-use camera is perfect for all ages, delivering high-quality instant photos with just a press of a button. With its modern design and a variety of vibrant colors, the Instax Mini 12 is ideal for parties, travels, and any special occasion. It includes an automatic exposure mode to ensure every shot comes out perfectly, without the need for complicated adjustments.",
+    "price": 79.99,
+    "brand": "Fujifilm",
+    "category": "Camera",
+    "inStock": true,
+    "images": [
+      {
+        "color": "Blanco",
+        "colorCode": "#a2d2ff",
+        "image": "https://m.media-amazon.com/images/I/51T3ZomxaCL._AC_SX466_.jpg",
+        
+      },
+      {
+        "color": "Rosa",
+        "colorCode": "#FFC0CB",
+        "image": "https://m.media-amazon.com/images/I/616r9mo7IoL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        
+      }
+    ],
+    "reviews": [
+      {
+        "id": "64a65a6158b470c6e06959ef",
+        "userId": "6475af156bad4917456e6e1f",
+        "productId": "64a4ebe300900d44bb50628c",
+        "rating": 5,
+        "comment": "Excellent photo quality, easy to use.",
+        "createdDate": "2023-07-06T06:08:33.067Z",
+        "user": {
+          "id": "6475af156bad4917456e6e1f",
+          "name": "Ana",
+          "email": "ana@example.com",
+          "emailVerified": null,
+          "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+          "hashedPassword": null,
+          "createdAt": "2023-05-30T08:08:53.979Z",
+          "updatedAt": "2023-05-30T08:08:53.979Z",
+          "role": "USER"
+        }
+      },
+      {
+        "id": "64a65a6158b470c6e06959f0",
+        "userId": "6475af156bad4917456e6e20",
+        "productId": "64a4ebe300900d44bb50628c",
+        "rating": 4,
+        "comment": "Muy divertida de usar, aunque el precio de la película podría ser más económico.",
+        "createdDate": "2023-07-07T10:15:45.123Z",
+        "user": {
+          "id": "6475af156bad4917456e6e20",
+          "name": "Luis",
+          "email": "luis@example.com",
+          "emailVerified": null,
+          "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+          "hashedPassword": null,
+          "createdAt": "2023-06-01T12:00:00.000Z",
+          "updatedAt": "2023-06-01T12:00:00.000Z",
+          "role": "USER"
+        }
+      }
+    ]
+},
+{
+  "id": "64a4ebe300900d44bb50628d",
+  "name": "Pioneer DJ DM-40D-W 4-inch Active Desktop Monitor Speaker",
+  "description": "Enhance your audio experience with the Pioneer DJ DM-40D-W 4-inch Active Desktop Monitor Speaker. Designed for DJs and music enthusiasts, this monitor speaker delivers clear, high-quality sound with a powerful bass response. The compact design fits perfectly on any desk, making it ideal for both home studios and professional setups. Featuring a 4-inch fiberglass woofer and a ¾-inch soft dome tweeter, the DM-40D-W ensures precise audio reproduction across all frequencies. With its sleek white finish, it not only sounds great but also looks stylish in any environment.",
+  "price": 149.99,
+  "brand": "Pioneer DJ",
+  "category": "Speakers",
+  "inStock": true,
+  "images": [
+    {
+      "color": "White",
+      "colorCode": "#FFFFFF",
+      "image": "https://m.media-amazon.com/images/I/81-p4XVmaAL._AC_SX679_.jpg",
+      
+    }
+  ],
+  "reviews": [
+    {
+      "id": "64a65a6158b470c6e06959ef",
+      "userId": "6475af156bad4917456e6e1f",
+      "productId": "64a4ebe300900d44bb50628d",
+      "rating": 5,
+      "comment": "Outstanding sound quality for the price. Perfect for my home studio setup.",
+      "createdDate": "2023-07-06T06:08:33.067Z",
+      "user": {
+        "id": "6475af156bad4917456e6e1f",
+        "name": "John",
+        "email": "john@example.com",
+        "emailVerified": null,
+        "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+        "hashedPassword": null,
+        "createdAt": "2023-05-30T08:08:53.979Z",
+        "updatedAt": "2023-05-30T08:08:53.979Z",
+        "role": "USER"
+      }
+    },
+    {
+      "id": "64a65a6158b470c6e06959f0",
+      "userId": "6475af156bad4917456e6e20",
+      "productId": "64a4ebe300900d44bb50628d",
+      "rating": 4,
+      "comment": "Great speakers but a bit pricey. The sound clarity is excellent.",
+      "createdDate": "2023-07-07T10:15:45.123Z",
+      "user": {
+        "id": "6475af156bad4917456e6e20",
+        "name": "Emma",
+        "email": "emma@example.com",
+        "emailVerified": null,
+        "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+        "hashedPassword": null,
+        "createdAt": "2023-06-01T12:00:00.000Z",
+        "updatedAt": "2023-06-01T12:00:00.000Z",
+        "role": "USER"
+      }
+    }
+  ]
+},
+{
+  "id": "64a4ebe300900d44bb50628e",
+  "name": "HyperX QuadCast S RGB - USB Condenser Microphone with Shock Mount for Gaming, Streaming, and Podcasts",
+  "description": "Elevate your audio experience with the HyperX QuadCast S RGB USB Condenser Microphone. Designed for gaming, streaming, and podcasts, this versatile microphone offers high-quality sound and features dynamic RGB lighting for a personalized setup. It includes a shock mount to minimize vibrations and an anti-vibration capsule to reduce background noise. With four polar patterns to choose from, it adapts to any recording situation, whether you’re gaming, streaming, or conducting a podcast. Compatible with a wide range of devices, it’s the ideal choice for content creators looking for professional-level audio quality.",
+  "price": 139.99,
+  "brand": "HyperX",
+  "category": "Microphones",
+  "inStock": true,
+  "images": [
+    {
+      "color": "Black",
+      "colorCode": "#000000",
+      "image": "https://m.media-amazon.com/images/I/616gyWldRTL._AC_SY879_.jpg",
+      
+    },
+    {
+      "color": "Red",
+      "colorCode": "#FFF",
+      "image": "https://m.media-amazon.com/images/I/61thLSN9XWL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+      
+    }
+  ],
+  "reviews": [
+    {
+      "id": "64a65a6158b470c6e06959ef",
+      "userId": "6475af156bad4917456e6e1f",
+      "productId": "64a4ebe300900d44bb50628e",
+      "rating": 5,
+      "comment": "Fantastic microphone for streaming and podcasting! The RGB lighting adds a nice touch to my setup.",
+      "createdDate": "2023-07-06T06:08:33.067Z",
+      "user": {
+        "id": "6475af156bad4917456e6e1f",
+        "name": "John",
+        "email": "john@example.com",
+        "emailVerified": null,
+        "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+        "hashedPassword": null,
+        "createdAt": "2023-05-30T08:08:53.979Z",
+        "updatedAt": "2023-05-30T08:08:53.979Z",
+        "role": "USER"
+      }
+    },
+    {
+      "id": "64a65a6158b470c6e06959f0",
+      "userId": "6475af156bad4917456e6e20",
+      "productId": "64a4ebe300900d44bb50628e",
+      "rating": 4,
+      "comment": "Great microphone with good audio quality, but the software integration could be better.",
+      "createdDate": "2023-07-07T10:15:45.123Z",
+      "user": {
+        "id": "6475af156bad4917456e6e20",
+        "name": "Emma",
+        "email": "emma@example.com",
+        "emailVerified": null,
+        "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+        "hashedPassword": null,
+        "createdAt": "2023-06-01T12:00:00.000Z",
+        "updatedAt": "2023-06-01T12:00:00.000Z",
+        "role": "USER"
+      }
+    }
+  ]
+},
+{
+  "id": "64a4ebe300900d44bb50628f",
+  "name": "MSI Aegis ZS Gaming Desktop, AMD Ryzen 7 7700, GeForce RTX 4060, 16GB RAM, 1TB SSD, RGB Fan Cooling, Wi-Fi 6E",
+  "description": "Unleash powerful gaming performance with the MSI Aegis ZS Gaming Desktop. Powered by an AMD Ryzen 7 7700 processor, this desktop offers lightning-fast multitasking and smooth gaming experiences. Equipped with a GeForce RTX 4060 graphics card, it delivers stunning visuals and smooth gameplay at high settings. With 16GB of RAM and a 1TB SSD, this desktop offers ample space for storage and quick load times. The RGB fan cooling system ensures efficient thermal management, and the Wi-Fi 6E support provides fast and reliable internet connectivity. Perfect for gamers and content creators alike.",
+  "price": 1599.99,
+  "brand": "MSI",
+  "category": "Gaming Desktops",
+  "inStock": true,
+  "images": [
+    {
+      "color": "Black",
+      "colorCode": "#000000",
+      "image": "https://m.media-amazon.com/images/I/61wsH0j5SvL._AC_SX466_.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "64a65a6158b470c6e06959ef",
+      "userId": "6475af156bad4917456e6e1f",
+      "productId": "64a4ebe300900d44bb50628f",
+      "rating": 5,
+      "comment": "Incredible gaming performance and fast loading times with the SSD. The RGB cooling fans add a nice touch to the overall setup.",
+      "createdDate": "2023-07-06T06:08:33.067Z",
+      "user": {
+        "id": "6475af156bad4917456e6e1f",
+        "name": "John",
+        "email": "john@example.com",
+        "emailVerified": null,
+        "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+        "hashedPassword": null,
+        "createdAt": "2023-05-30T08:08:53.979Z",
+        "updatedAt": "2023-05-30T08:08:53.979Z",
+        "role": "USER"
+      }
+    },
+    {
+      "id": "64a65a6158b470c6e06959f0",
+      "userId": "6475af156bad4917456e6e20",
+      "productId": "64a4ebe300900d44bb50628f",
+      "rating": 4,
+      "comment": "Great performance, but the desktop can get quite noisy under heavy loads.",
+      "createdDate": "2023-07-07T10:15:45.123Z",
+      "user": {
+        "id": "6475af156bad4917456e6e20",
+        "name": "Emma",
+        "email": "emma@example.com",
+        "emailVerified": null,
+        "image": "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+        "hashedPassword": null,
+        "createdAt": "2023-06-01T12:00:00.000Z",
+        "updatedAt": "2023-06-01T12:00:00.000Z",
+        "role": "USER"
+      }
+    }
+  ]
+}
+
+
+
+
   
   
  ];

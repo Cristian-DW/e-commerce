@@ -3,7 +3,7 @@
 import { CartProductType } from "../product/[productId]/ProductDetails";
 import { formatPrice } from "@/utils/formatPrice";
 import Link from "next/link";
-import { trucateText } from "@/utils/trucateText";
+import { truncateText } from "../../utils/trucateText";
 import Image from "next/image";
 import SetQuantity from "../components/products/setQuantity";
 import { useCart } from "@/hooks/UseCart";
@@ -53,7 +53,7 @@ const ItemContent: React.FC<ItemContentProps> = ({ item }) => {
         </Link>
         <div className="flex flex-col justify-between text-base md:text-xl">
           <Link href={`/product/${item.id}`}>
-            {trucateText(item.name)}
+            {truncateText(item.name)}
           </Link>
           <div>{item.selectedImg.color}</div>
           <div className="w-[70px]"></div>
